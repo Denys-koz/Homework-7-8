@@ -7,14 +7,14 @@
     font-style: normal;
     font-weight: normal;
 }
- }
+}
 
- @font-face {
+@font-face {
     font-family: "OpenSans Light";
     src: url("../fonts/OpenSansLight.eot");
     src: url("../fonts/OpenSansLight.eot?#iefix")format("embedded-opentype"),
     url("../fonts/OpenSansLight.woff") format("woff"),
-    url("../fonts/OpenSansLight.ttf") format("truetype");
+    url("../fonts/OpenSansLight.ttf.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
@@ -129,8 +129,8 @@ nav{
 
 .slider__img{
 	position: absolute;
-	top: -20px;
-	left: 120%;
+	top: -18px;
+	left: 121%;
 }
 
 .navigation{
@@ -161,7 +161,7 @@ nav{
 aside{
 	border-top: 1px solid #33253a;
 	border-bottom: 1px solid #1d2f37;
-	padding: 72px 10px 0;
+	padding-top: 81px;
 	background: rgb(116,81,131); /* Old browsers */
 	background: -moz-linear-gradient(top,  rgba(116,81,131,1) 0%, rgba(118,82,131,1) 5%, rgba(109,77,123,1) 20%, rgba(68,50,76,1) 74%, rgba(54,41,61,1) 100%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(top,  rgba(116,81,131,1) 0%,rgba(118,82,131,1) 5%,rgba(109,77,123,1) 20%,rgba(68,50,76,1) 74%,rgba(54,41,61,1) 100%); /* Chrome10-25,Safari5.1-6 */
@@ -181,18 +181,28 @@ aside>.container:first-child{
 	width: 30%;
 	color: #fff;
 	line-height: 24px;
-	margin: 0 1% 67px;
+	margin: 0 4% 64px 1%;
+	position: relative;
+}
+
+.about--last{
+	margin-right: -1%;
+}
+.about__info{
+	width: 81%;
+	margin-left: 19%;
 }
 
 .about__title{
 	font-size: 30px;
-	text-shadow: 2px 1px 5px rgba(0, 0, 0, 1);
+	text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+	letter-spacing: -0.4px;
 }
 
 .about__text{
 	font-size: 18px;
 	font-family: 'OpenSans Light';
-	margin: 15px 0 25px;
+	margin: 10px 0 16px -3px;
 }
 
 .about__link{
@@ -200,17 +210,21 @@ aside>.container:first-child{
 	text-decoration: none;
 	float: right;
 	color: #fff;
+	margin-right: 20px;
 }
 
 .about__link:hover{
-	text-shadow: 1px 1px 5px rgba(255, 255, 255, 1);
+	text-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
 }
 
 .about__img{
-	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
 	width: 30px;
 	height: 30px;
 	background: url(../img/sprite.png) 0 0 no-repeat;
+	margin-right: 1%;
 }
 
 .about__img--oval{
@@ -236,8 +250,8 @@ article{
 
 .article{
 	display: inline-block;
-	width: 45%;
-	margin: 100px 5% 113px 0;
+	width: 46%;
+	margin: 100px 5% 72px 0;
 	
 }
 
@@ -248,14 +262,14 @@ article{
 	border-right: 1px solid #f6f6f6;
 	border-bottom: 1px solid #efefef;
 	position: relative;
-	margin-bottom: 20px;
+	margin-bottom: 23px;
 }
 
 .article__block:after {
     content: ''; 
     position: absolute;
-    right: 20px;
-    bottom: -22px;
+    right: 43px;
+    bottom: -18px;
     border-bottom: 22px solid transparent;
     border-right: 22px solid white;
    }
@@ -270,23 +284,25 @@ article{
 	font-size: 30px;
 	color: #454545;
 	display: inline-block;
-	margin: 30px 0 20px 40px;
+	margin: 33px 0 12px 38px;
 }
 
 .article__subtitle{
 	font-size: 30px;
 	color: #edbfff;
 	display: inline-block;
+	margin-left: 3px;
+	letter-spacing: -0.25px;
 }
 
 .article__text{
 	font-family: 'OpenSans Light';
 	font-size: 16px;
-	margin: 0 30px 40px 20px;
+	margin: 0 40px 35px 38px;
 }
 
 .navigation--white{
-	margin-left: 20%;	
+	margin-left: 40%;	
 }
 
 .navigation__shape--white{
@@ -353,20 +369,24 @@ section{
 }
 
 .brandlogo{
-	width: 80%;
-	margin: 25px auto 30px;
+	width: 82%;
+	margin: 25px auto 28px;
 	font-size: 0;
 }
 
 .brandlogo__item{
 	display: inline-block;
 	vertical-align: middle;
-	margin: 0 3%;
+	margin: 0 4%;
 }
 
-.brandlogo__item:first-child,
+.brandlogo__item:first-child{
+	margin-left: 1%;
+}
+
 .brandlogo__item:last-child{
-	margin: 0;
+	margin-right: 0;
+	margin-left: 4%;
 }
 
 footer{
@@ -384,8 +404,16 @@ footer>.container:first-child{
 
 .description{
 	display: inline-block;
-	width: 30%;
-	margin: 100px 1%;
+	width: 29%;
+	margin: 98px 3% 94px;
+}
+
+.description:first-child{
+	margin-left: 0;
+}
+
+.description:last-child{
+	margin-right: 0;
 }
 
 .description__logo{
@@ -404,6 +432,7 @@ footer>.container:first-child{
 	font-size: 16px;
 	color: #c5c5c5;
 	text-shadow: 0px 1px 1px rgba(255, 255, 255, 1);
+
 }
 
 .description__text{
@@ -411,6 +440,8 @@ footer>.container:first-child{
 	font-size: 16px;
 	color: #787878;
 	text-shadow: 0px 1px 1px rgba(255, 255, 255, 1);
+	line-height: 24px;
+	margin-top: 6px;
 }
 
 .description__title{
@@ -425,14 +456,19 @@ footer>.container:first-child{
  	-moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: cover;
-  	height: 114px;
 }
 
 .menu--footer{
 	float: none;
 	display: inline-block;
-	margin-top: 48px;
+	margin: 42px 0 40px;
 	width: 60%;
+}
+
+.menu__item--footer{
+	margin-left: 19px;
+	letter-spacing: 0;
+
 }
 
 .menu__link--footer{
@@ -445,7 +481,7 @@ footer>.container:first-child{
 	color: #fff;
 	text-shadow: 0px 1px 1px rgba(0, 0, 0, 1);
 	text-align: right;
-	margin-left: 5%;
+	margin-left: 26%;
 
 }
 

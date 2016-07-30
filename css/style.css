@@ -56,7 +56,6 @@ float: left;
 
 nav{
 	float: right;
-	/*min-width: 634px;*/
 }
 
 .menu{
@@ -645,7 +644,7 @@ footer>.container:first-child{
 	}
 
 	.slider__text:first-line{
-		line-height: 30;
+		line-height: 30px;
 	}
 
 	.slider__img{
@@ -772,6 +771,10 @@ footer>.container:first-child{
 
 	.navigation--white{
 		margin-left: 35%;	
+	}
+	
+	.navigation__item--white {
+	    margin: 0 2px;
 	}
 
 	.updates{
@@ -1040,10 +1043,6 @@ footer>.container:first-child{
 
 	.navigation{
 		margin-left: 41%;
-	}
-
-	.navigation__item {
-	    margin: 0 3px;
 	}
 
 	.about{
@@ -1320,10 +1319,6 @@ footer>.container:first-child{
 
 	.navigation--white {
 	    margin-left: 34%;
-	}
-
-	.navigation__item--white {
-	    margin: 0 2px;
 	}
 
 	.updates {

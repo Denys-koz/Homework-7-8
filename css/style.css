@@ -138,8 +138,6 @@ nav{
 }
 
 .slider__img{
-	width: 192px;
-	height: 272px;
 	position: absolute;
 	top: -18px;
 	left: 121%;
@@ -190,29 +188,26 @@ aside>.container:first-child{
 
 .about{
 	float: left;
-	width: 30%;
+	width: 33.333333333333336%;
 	color: #fff;
 	line-height: 24px;
-	margin: 0 4% 64px 1%;
+	margin-bottom: 64px;
 	position: relative;
 }
 
-.about--last{
-	margin-right: -1%;
-}
 .about__info{
-	width: 81%;
-	margin-left: 19%;
-}
-
-.about__info--center{
-	width: 80%;
+	width: 73%;
 	margin-left: 20%;
 }
 
+.about__info--center{
+	width: 72%;
+	margin-left: 26%;
+}
+
 .about__info--right{
-	width: 79%;
-	margin-left: 21%;
+	width: 70%;
+	margin-left: 30%;
 }
 
 .about__title{
@@ -221,11 +216,19 @@ aside>.container:first-child{
 	letter-spacing: -0.4px;
 }
 
+.about__title--right{
+	margin-left: 4px;
+}
+
 .about__text{
 	font-size: 16px;
 	font-family: 'OpenSans Light';
 	margin: 10px 0 16px -1px;
 	letter-spacing: -0.1px;
+}
+
+.about__text--right{
+	margin-left: 1px;
 }
 
 .about__link{
@@ -245,13 +248,13 @@ aside>.container:first-child{
 }
 
 .about__link--right{
-	margin-right: 10px;
+	margin-right: 1px;
 }
 
 .about__img{
 	position: absolute;
 	top: 1px;
-	left: 0;
+	left: 10px;
 	width: 30px;
 	height: 30px;
 	background: url(../img/sprite.png) 0 0 no-repeat;
@@ -259,13 +262,13 @@ aside>.container:first-child{
 }
 
 .about__img--oval{
-	left: 3px;
+	left: 29px;
 	width: 34px;
 	background-position: -31px 0;
 }
 
 .about__img--note{
-	left: 5px;
+	left: 47px;
 	width: 28px;
 	background-position: -64px 0;
 }
@@ -417,30 +420,39 @@ section{
 	border-bottom: 1px solid #fefefe;
 }
 
-.brandlogo{
-	width: 87%;
-	margin: 25px auto 28px;
-	font-size: 0;
+.brandlogo{ 
+	width: 87%; 
+	margin: 25px auto 28px; 
+	font-size: 0; 
 }
 
-.brandlogo__item{
+.brandlogo__item{ 
+	display: inline-block; 
+	vertical-align: middle; 
+	width: 16.66666%; 
+	text-align: center; 
+} 
+
+.brandlogo__item a { 
+	text-align: center; 
 	display: inline-block;
-	vertical-align: middle;
-	margin-left: 7%;
-}
+} 
 
-.brandlogo__item:first-child{
-	margin-left: 4%;;
-}
+.brandlogo__item:nth-child(2) a{ 
+	margin-right: 10%;
+} 
 
-.brandlogo__item:nth-child(3),
-.brandlogo__item:nth-child(4){
-	margin-left: 8%;
-}
+.brandlogo__item:nth-child(3) a{ 
+	margin-right: 18%;
+} 
 
-.brandlogo__item:last-child{
-	margin-left: 8%;
-}
+.brandlogo__item:nth-child(4) a{ 
+	margin-right: 30%;
+} 
+
+.brandlogo__item:nth-child(5) a{ 
+	margin-right: 20%;
+} 
 
 footer{
 	background: #ececec;
@@ -581,7 +593,7 @@ footer>.container:first-child{
 
 /*==============================================768=======================================*/
 
-@media(max-width: 768px) {
+@media only screen and (max-width: 850px) {
 	.container{
 		padding: 0 20px;
 	}
@@ -628,6 +640,7 @@ footer>.container:first-child{
 	.slider__subtitle{
 		font-size: 24px;
 		margin-top: 6px;
+		margin-bottom: 1px;
 	    letter-spacing: -0.25px;
 	    max-width: 270px;
 	    overflow: hidden;
@@ -644,7 +657,7 @@ footer>.container:first-child{
 	}
 
 	.slider__text:first-line{
-		line-height: 30px;
+		line-height: 31px;
 	}
 
 	.slider__img{
@@ -668,33 +681,28 @@ footer>.container:first-child{
 		padding-top: 76px;
 	}
 
-	.about{
-		   margin: 0 4% 64px 4%;
-		   width: 27%;
-	}
-
-	.about--last{
-		margin-right: -2%;
-	}
-
 	.about__info{
-		width: 83%;
-		margin-left: 17%;
+		width: 67%;
+		margin-left: 26%;
 	}
 
 	.about__info--center{
-		width: 83%;
-		margin-left: 15%;
+		width: 66%;
+		margin-left: 30%;
 	}
 
 	.about__info--right{
-		width: 81%;
-		margin-left: 19%;
+		width: 67%;
+		margin-left: 37%;
 	}
 
 	.about__title{
 		font-size: 24px;
 		letter-spacing: -0.25px;
+	}
+
+	.about__title--right{
+		margin-left: 0;
 	}
 
 	.about__text{
@@ -714,22 +722,22 @@ footer>.container:first-child{
 	}
 
 	.about__link--right{
-		margin-right: 13px;
+		margin-right: 15px;
 	}
 
 	.about__img{
 		top: 2px;
-		left: -19px;
+		left: 10px;
 	}
 
 	.about__img--oval{
-		left: -22px;
+		left: 19px;
 		width: 30px;
 		background-position: 0 0;
 	}
 
 	.about__img--note{
-		left: -16px;
+		left: 38px;
 		width: 30px;
 		background-position: 0 0;
 	}
@@ -866,39 +874,42 @@ footer>.container:first-child{
 		display: block;
 		margin-left: 0;
 	}
-
-	.menu--footer{
-		margin-bottom: 9px;
-	}
-
-	.designed_by{
-		margin-left: 80%;
-		margin-top: 2px;
-		letter-spacing: 0.1px;
-		margin-bottom: 86px;
-	}
 	
 	.brandlogo{
 		width: 100%;
 	}
+	
+	.brandlogo__item:first-child { 
+		text-align: left;
+	} 
 
-	.brandlogo__item{
-		margin-left: 7%;
+	.brandlogo__item:last-child { 
+		text-align: right;
+	} 
+
+	.brandlogo__item:nth-child(2) a{ 
+		margin-right: 32%;
+	} 
+
+	.brandlogo__item:nth-child(3) a{ 
+		margin-right: 29%;
+	} 
+
+	.brandlogo__item:nth-child(5) a{ 
+		margin-right: 8%;
+	} 
+
+	.menu--footer{
+		margin-bottom: 9px;
+		width: 100%;
 	}
 
-	.brandlogo__item:first-child{
-		margin-left: 0;
-	}
-
-	.brandlogo__item:last-child{
-		margin-left: 6%;
-		position: relative;
-		left: 5px;
-	}
-
-	.brandlogo__item:nth-child(3),
-	.brandlogo__item:nth-child(4){
-		margin-left: 8%;
+	.designed_by{
+		text-align: right;
+		width: 100%;
+		margin-top: 2px;
+		letter-spacing: 0.1px;
+		margin-bottom: 86px;
 	}
 
 	.menu__item--footer{
@@ -922,7 +933,7 @@ footer>.container:first-child{
 
 /*==============================================480=======================================*/
 
-@media(max-width: 480px) {
+@media only screen and (max-width: 685px) {
 	header{
 		padding: 69px 0 60px;
 	}
@@ -945,7 +956,8 @@ footer>.container:first-child{
 
 	nav .menu:hover{
 		position: absolute;
-		left: 24.5%;
+		left: 50%;
+		margin-left: -122px;
 		height: auto;
 		z-index: 3;
 		background: rgba(54,40,62,0.75);
@@ -1033,7 +1045,6 @@ footer>.container:first-child{
 
 	.slider__img img{
 		width: 182px;
-		height: 265px;
 	}
 
 	.slider__item {
@@ -1054,9 +1065,6 @@ footer>.container:first-child{
 
 	.about__info{
 		margin-left: 14%;
-	}
-
-	.about__info--right {
 	    width: 83%;
 	}
 
@@ -1085,6 +1093,7 @@ footer>.container:first-child{
 	}
 
 	.article {
+	    display: block;
 	    width: 100%;
 	    margin: 71px 7% 49px 0;
 	}
@@ -1133,30 +1142,32 @@ footer>.container:first-child{
 	}
 
 	.brandlogo__item{
-		margin-left: 12%;
+		width: 33.333333333333336%;
 	}
 
-	.brandlogo__item:first-child {
-    	margin-left: 14%;
+	.brandlogo__item:first-child a{
+    	margin-left: 43%;
 	}
 
-	.brandlogo__item:last-child{
-		margin-left: 10%;
-		margin-top: 24px;
+	.brandlogo__item:nth-child(2) a{
+		margin-right: -4%;
 	}
 
-	.brandlogo__item:nth-child(3){
-		margin-left: 12%;
-	}
-
-	.brandlogo__item:nth-child(4){
-		margin-left: 10%;
+	.brandlogo__item:nth-child(4) a{
+		margin-right: 2%;
 		margin-top: 25px;
 	}
 
-	.brandlogo__item:nth-child(5){
+	.brandlogo__item:nth-child(5) a{
+		margin-right: 17%;
 		margin-top: 25px;
 	}
+
+	.brandlogo__item:last-child a{
+		margin-right: 32%;
+		margin-top: 25px;
+	}
+
 
 	.description {
 	    width: 100%;
@@ -1192,9 +1203,6 @@ footer>.container:first-child{
 		margin-top: 3px;
 	}
 	
-	.bottom{
-		padding-bottom: 86px;
-	}
 
 	.menu--footer{
 		width: 100%;
@@ -1210,9 +1218,6 @@ footer>.container:first-child{
 	}
 
 	.designed_by {
-	    width: 40%;
-	    display: block;
-	    margin: 2px auto 0;
 	    text-align: center;
 	}
 
@@ -1220,17 +1225,17 @@ footer>.container:first-child{
 }/*-------------------------------------------480-----------------------------------*/
 /*=============================================320====================================*/
 
-@media(max-width: 320px) {
+@media only screen and (max-width: 470px) {
 	header {
     	padding: 69px 0 68px;
 	}
 	
-	nav .menu:hover{
-		left: 11.5%;
+	nav {
+		margin-top: 24px;
 	}
 
 	.slider{
-		margin-bottom: 31px;
+		margin-bottom: 34px;
 		background: rgba(0,0,0,0);
 	}
 
@@ -1247,6 +1252,7 @@ footer>.container:first-child{
 
 	.slider__subtitle{
 		letter-spacing: -0.2px;
+		margin-top: -7px;
 	}
 
 	.slider__img{
@@ -1286,12 +1292,8 @@ footer>.container:first-child{
     	margin-bottom: 0;
 	}
 
-	article {
-	    padding-left: 0;
-	}
-
 	.article {
-	    margin: 71px 7% 49px 23px;
+	    margin: 71px 7% 49px 0;
 	}
 
 	.article__block {
@@ -1312,18 +1314,22 @@ footer>.container:first-child{
 	}
 
 	.article__text {
-	    margin: -4px 41px 25px 38px;
+	    margin: -4px 18px 25px 38px;
 	    max-height: 170px;
 	    letter-spacing: -0.1px;
 	}
 
+	.article__text span{
+	    letter-spacing: -0.22px;
+	}
+
 	.navigation--white {
-	    margin-left: 34%;
+	    margin-left: 36%;
 	}
 
 	.updates {
-	    margin-left: 0px;
-	    width: 100%;	}
+	    margin-left: -23px;
+	    width: 109%;	}
 
 	.updates__head {
 	    margin-left: -1px;
@@ -1352,36 +1358,40 @@ footer>.container:first-child{
 	}
 
 	.brandlogo {
-	    margin: 23px auto 72px;
+	    margin: 23px auto 71px;
 	}
 
 	.brandlogo__item{
-	    margin-left: 18%;
+	    width: 50%;
 	    margin-top: 28px
 	}
 
-	.brandlogo__item:first-child {
-	    margin-left: 15%;
+	.brandlogo__item:first-child a {
+		    margin-left: 30%;
 	}
 
-	.brandlogo__item:last-child{
-		margin-left: 17%;
-		margin-top: 41px;
+	.brandlogo__item:nth-child(2) a {
+	    margin-right: 11%;
 	}
 
-	.brandlogo__item:nth-child(3){
-		margin-left: 17%;
-		margin-top: 60px;
+	.brandlogo__item:nth-child(3) a {
+	    margin-right: -20%;
+	    margin-top: 32px;
 	}
 
-	.brandlogo__item:nth-child(4){
-		margin-left: 21%;
-		margin-top: 60px;
+	.brandlogo__item:nth-child(4) a {
+	    margin-right: 8%;
+	    margin-top: 30px;
 	}
 
-	.brandlogo__item:nth-child(5){
-		margin-top: 41px;
-		margin-left: 7%;
+	.brandlogo__item:nth-child(5) a {
+	    margin-right: -4%;
+	    margin-top: 13px;
+	}
+
+	.brandlogo__item:last-child a {
+	    margin-right: 15%;
+	    margin-top: 14px;
 	}
 
 	.description{
@@ -1393,16 +1403,13 @@ footer>.container:first-child{
 	}
 
 	.bottom {
-	    padding-top: 42px;
+	    padding: 42px 0 87px;
 	}
 
 	.designed_by {
-	    width: 52%;
 	    margin-bottom: 60px;
 	    margin-top: 0;
 	}
-
-
 
 
 }
